@@ -1,3 +1,4 @@
+Linux 32 GB RAM Env
 # jetson-v1
 Object detection of headlights using jetson
 # JetPack already includes CUDA/cuDNN, etc.
