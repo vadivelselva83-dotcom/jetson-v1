@@ -4,6 +4,7 @@ import time
 import numpy as np
 import tensorflow as tf
 
+# Constants to be defined in a common properties as best practice
 MODEL_DIR = "outputs_retinanet/savedmodel_trt_fp16"
 INPUT_SIZE = 640
 SCORE_THRESH = 0.4
