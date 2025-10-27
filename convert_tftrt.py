@@ -8,7 +8,7 @@ os.makedirs(TRT_DIR, exist_ok=True)
 
 params = tf.experimental.tensorrt.ConversionParams(
     precision_mode="FP16",
-    max_workspace_size_bytes=1<<30  # 1GB
+    max_workspace_size_bytes=1<<30  # 1GB include logic for higher and lower GB later
 )
 converter = tf.experimental.tensorrt.Converter(
     input_saved_model_dir=SAVEDMODEL_DIR,
