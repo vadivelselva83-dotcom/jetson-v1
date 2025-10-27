@@ -5,7 +5,7 @@ import tensorflow_addons as tfa
 import keras_cv
 from tensorflow import keras
 
-# Paths
+# Paths for training
 IMG_ROOT = "data/images"
 TRAIN_JSON = "data/annotations/instances_train.json"
 VAL_JSON   = "data/annotations/instances_val.json"
@@ -13,6 +13,7 @@ OUTPUT_DIR = "outputs_retinanet"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 1 class: "headlight" (class_id=1)
+ #constants - replace as needed 
 NUM_CLASSES = 1
 IMG_SIZE = 640  # Downscale for speed on Jetson
 BATCH = 8
