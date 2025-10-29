@@ -2,6 +2,8 @@
 import cv2
 
 # 1920x1080 @ 30fps, BGR frames to OpenCV
+# change resolution for the other camera
+# constants
 def gstreamer_pipeline(width=1920, height=1080, fps=30):
     return (
         f"nvarguscamerasrc ! "
