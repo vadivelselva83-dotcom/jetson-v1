@@ -6,6 +6,7 @@ while True:
     ret, frame = cap.read();  if not ret: break
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     gray = cv2.GaussianBlur(gray, (5,5), 0)
+    #color change to black - not gray
     # Top-hat to highlight bright spots
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15,15))
     tophat = cv2.morphologyEx(gray, cv2.MORPH_TOPHAT, kernel)
