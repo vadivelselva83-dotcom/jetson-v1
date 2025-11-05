@@ -9,7 +9,7 @@ MODEL_DIR = "outputs_retinanet/savedmodel_trt_fp16"
 INPUT_SIZE = 640
 SCORE_THRESH = 0.4
 IOU_THRESH = 0.5
-
+# camera fps needs to match preferably
 def gstreamer_pipeline(width=1920, height=1080, fps=30):
     return (
         f"nvarguscamerasrc ! "
