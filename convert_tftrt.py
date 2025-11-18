@@ -5,7 +5,7 @@ import os
 SAVEDMODEL_DIR = "outputs_retinanet/savedmodel"
 TRT_DIR = "outputs_retinanet/savedmodel_trt_fp16"
 os.makedirs(TRT_DIR, exist_ok=True)
-
+# to do: need multiple models to test with
 params = tf.experimental.tensorrt.ConversionParams(
     precision_mode="FP16",
     max_workspace_size_bytes=1<<30  # 1GB include logic for higher and lower GB later
